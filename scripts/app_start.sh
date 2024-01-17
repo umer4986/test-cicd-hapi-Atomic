@@ -1,10 +1,8 @@
 #!/bin/bash
 
-#_Change_Working_Directory
-cd /home/ec2-user/server
+# Change Working Directory
+cd /home/ubuntu/server  # Assuming 'ubuntu' is the default user for Ubuntu instances, change if needed
 
-#_Delete_Old_PM2_Service
-#sudo pm2 delete Frontend
-#sudo pm2 start server.js --name Frontend
+# Delete Old PM2 Service
 pm2 delete Frontend
 pm2 start server.js --name Frontend

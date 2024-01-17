@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#_Change_Working_Directory
-cd /home/ec2-user/server
+# Change Working Directory
+cd /home/ubuntu/server  # Assuming 'ubuntu' is the default user for Ubuntu instances, change if needed
 
-#_Remove_Unused_Code
+# Remove Unused Code
 rm -rf node_modules
 rm -rf build
 
-#Install_node_modules_&_Make_React_Build
-npm  install
+# Install node_modules & Make React Build
+npm install
 npm run build

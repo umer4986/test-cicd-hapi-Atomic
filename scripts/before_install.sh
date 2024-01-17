@@ -1,13 +1,14 @@
 #!/bin/bash
 
-#_Change_Working_Directory
-cd /home/ec2-user/server
+# Change Working Directory
+cd /home/ubuntu/server  # Assuming 'ubuntu' is the default user for Ubuntu instances, change if needed
 
-#_Update_&_Set_Node_Version
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+# Update & Set Node Version
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
-#_Download_Node_&NPM
-yum -y install nodejs npm
+# Download Node & NPM
+sudo apt-get update
+sudo apt-get install -y nodejs npm
 
-#_Download_PM2
-npm install pm2@latest -g
+# Download PM2
+sudo npm install pm2@latest -g
