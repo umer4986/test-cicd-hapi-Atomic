@@ -8,18 +8,7 @@ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 
 # Download Node & NPM
 sudo apt-get update
-sudo apt-get install -y nodejs npm
-
-# Resolve Unmet Dependencies
-sudo apt-get remove nodejs npm
-sudo apt-get clean
-sudo apt-get autoclean
-sudo apt-get autoremove
-sudo dpkg --configure -a
-sudo apt-get install -f
-
-# Install Node.js and npm Separately
-sudo apt-get install -y nodejs npm
+sudo apt-get install -y nodejs
 
 # Download PM2
 sudo npm install pm2@latest -g
