@@ -10,3 +10,4 @@ rm -rf build
 # Install node_modules & Make React Build
 npm install
 npm run build
+echo "test commit"
